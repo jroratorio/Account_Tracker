@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/searchTransactionDate"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/activity_vertical_margin"
+	        android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/fromDate"
+		        android:textColor="@color/white"
+		        android:paddingLeft="@dimen/activity_horizontal_margin"
+		        android:paddingTop="@dimen/activity_vertical_margin"        
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10sp"
+		        android:orientation="horizontal" >
+			    <EditText
+			        android:id="@+id/etFromDay"
+			        android:layout_width="50sp"
+			        android:layout_height="40sp"
+			        android:ems="10"
+			        android:inputType="numberSigned"
+			        android:textColor="@color/white"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_marginLeft="@dimen/activity_vertical_margin"
+			        android:paddingTop="10sp"
+			        android:hint="@string/dd" />	    
+			    
+			    <EditText
+			        android:id="@+id/etFromMonth"
+			        android:layout_width="50sp"
+			        android:layout_height="40sp"
+			        android:ems="10"
+			        android:inputType="numberSigned"
+			        android:textColor="@color/white"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_marginLeft="@dimen/activity_vertical_margin"
+			        android:paddingTop="10sp"
+			        android:hint="@string/mm"/>
+			    
+			    <EditText
+			        android:id="@+id/etFromYear"
+			        android:layout_width="50sp"
+			        android:layout_height="40sp"
+			        android:ems="10"
+			        android:inputType="numberSigned"
+			        android:textColor="@color/white"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_marginLeft="@dimen/activity_vertical_margin"
+			        android:paddingTop="10sp"
+			        android:hint="@string/yyyy" />
+			</LinearLayout>
+			
+		    <TextView
+		        android:id="@+id/textView10"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/toDate"
+		        android:textColor="@color/white"
+		        android:paddingLeft="@dimen/activity_horizontal_margin"
+		        android:paddingTop="@dimen/activity_vertical_margin"        
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10sp"
+		        android:orientation="horizontal" >
+			    <EditText
+			        android:id="@+id/etToDay"
+			        android:layout_width="50sp"
+			        android:layout_height="40sp"
+			        android:ems="10"
+			        android:inputType="numberSigned"
+			        android:textColor="@color/white"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_marginLeft="@dimen/activity_vertical_margin"
+			        android:paddingTop="10sp"
+			        android:hint="@string/dd" />	    
+			    
+			    <EditText
+			        android:id="@+id/etToMonth"
+			        android:layout_width="50sp"
+			        android:layout_height="40sp"
+			        android:ems="10"
+			        android:inputType="numberSigned"
+			        android:textColor="@color/white"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_marginLeft="@dimen/activity_vertical_margin"
+			        android:paddingTop="10sp"
+			        android:hint="@string/mm"/>
+			    
+			    <EditText
+			        android:id="@+id/etToYear"
+			        android:layout_width="50sp"
+			        android:layout_height="40sp"
+			        android:ems="10"
+			        android:inputType="numberSigned"
+			        android:textColor="@color/white"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_marginLeft="@dimen/activity_vertical_margin"
+			        android:paddingTop="10sp"
+			        android:hint="@string/yyyy" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>    
+</LinearLayout>

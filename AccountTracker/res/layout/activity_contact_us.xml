@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ContactUsActivity" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="25sp"
+        android:background="@drawable/ribbonbackground"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/contactUs" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin" 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textColor="@color/white"
+	        android:text="@string/sayan"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <Button
+	        android:id="@+id/btnSayanID"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20sp"
+	        android:textSize="14sp"
+	        android:layout_gravity="center"
+	        android:textColor="@color/lightblue"
+	        android:textStyle="italic"
+	        android:background="@color/background"
+	        android:text="@string/sayanID" />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin" 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textColor="@color/white"
+	        android:text="@string/anuran"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <Button
+	        android:id="@+id/btnAnuranID"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20sp"
+	        android:layout_gravity="center"
+	        android:textColor="@color/lightblue"
+	        android:background="@color/background"
+	        android:textSize="14sp"
+	        android:textStyle="italic"
+	        android:text="@string/anuranID" />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin" 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textColor="@color/white"
+	        android:text="@string/rajorsi"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <Button
+	        android:id="@+id/btnRajorsiID"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20sp"
+	        android:layout_gravity="center"
+	        android:textColor="@color/lightblue"
+	        android:background="@color/background"
+	        android:textSize="14sp"
+	        android:textStyle="italic"	        
+	        android:text="@string/rajorsiID" />
+	</LinearLayout>
+</LinearLayout>

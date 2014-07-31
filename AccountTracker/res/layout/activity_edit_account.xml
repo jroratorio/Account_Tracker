@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".AddAccountActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="25sp"
+        android:background="@drawable/ribbonbackground"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/editAccount" />
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" >		
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="5sp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:text="@string/bankName"
+		            android:textColor="@color/white" />
+		
+		        <EditText
+		            android:id="@+id/etEditBankName"
+		            android:layout_width="200sp"
+		            android:layout_height="40sp"
+		            android:layout_alignParentRight="true"
+		            android:layout_alignParentTop="true"
+		            android:ems="10"
+		            android:background="@drawable/edittextbackground"
+		            android:hint="@string/bankNamehint"
+		            android:textColor="@color/white"
+		            android:textSize="15sp" >		            
+		        </EditText>		        
+		    </RelativeLayout>
+		   
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">		
+			    <TextView
+			        android:id="@+id/textView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:paddingLeft="5sp"
+			        android:text="@string/accountNumber"
+			        android:textColor="@color/white" />
+		        
+			    <EditText
+			        android:id="@+id/etEditAccountNumber"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:textColor="@color/white"
+			        android:hint="@string/accountNumberHint"
+			        android:textSize="15sp"
+			        android:inputType="number"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:ems="10" />
+			    
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">		
+			    <TextView
+			        android:id="@+id/textView3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:paddingLeft="5sp"
+			        android:text="@string/branchname"
+			        android:textColor="@color/white" />
+		        
+			    <EditText
+			        android:id="@+id/etEditBranchName"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:textColor="@color/white"
+			        android:hint="@string/branchNameHint"
+			        android:textSize="15sp"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:ems="10" />
+			    
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">		
+			    <TextView
+			        android:id="@+id/textView4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:paddingLeft="5sp"
+			        android:text="@string/branchAddress"
+			        android:textColor="@color/white" />
+		        
+			    <EditText
+			        android:id="@+id/etEditBranchAddress"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:textColor="@color/white"
+			        android:hint="@string/branchaddressHint"
+			        android:textSize="15sp"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:ems="10" />
+			    
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">		
+			    <TextView
+			        android:id="@+id/textView5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:paddingLeft="5sp"
+			        android:text="@string/accountHolder"
+			        android:textColor="@color/white" />
+		        
+			    <EditText
+			        android:id="@+id/etEditAccountHolder"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:textColor="@color/white"
+			        android:hint="@string/accountHolderHint"
+			        android:textSize="15sp"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:ems="10" />
+			    
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">		
+			    <TextView
+			        android:id="@+id/textView6"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:paddingLeft="5sp"
+			        android:text="@string/ifsc"
+			        android:textColor="@color/white" />
+		        
+			    <EditText
+			        android:id="@+id/etEditIFSC"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:textColor="@color/white"
+			        android:hint="@string/ifscCodeHint"
+			        android:textSize="15sp"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:ems="10" />
+			    
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">		
+			    <TextView
+			        android:id="@+id/textView7"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:paddingLeft="5sp"
+			        android:text="@string/currentBalance"
+			        android:textColor="@color/white" />
+		        
+			    <EditText
+			        android:id="@+id/etEditCurrentBalance"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:textColor="@color/white"
+			        android:hint="@string/currentBalanceHint"
+			        android:textSize="15sp"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:inputType="numberDecimal"			        
+			        android:ems="10" />
+			    
+		    </RelativeLayout>
+		
+		    <Button
+		        android:id="@+id/btnEditAccount"
+		        android:layout_marginBottom="50sp"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40sp"
+		        android:layout_marginLeft="5sp"
+            	android:layout_marginRight="5sp"
+            	android:textSize="12sp"
+            	android:textColor="@color/white"
+            	android:hapticFeedbackEnabled="true"
+			    android:background="@drawable/buttonbackground"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="@dimen/activity_vertical_margin"
+		        android:text="@string/saveChanges" />
+	    </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:text="@string/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"/>
+
+    <ScrollView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@color/background"
+	        android:paddingLeft="@dimen/activity_horizontal_margin"
+	        android:paddingRight="@dimen/activity_horizontal_margin"
+	        android:paddingTop="@dimen/activity_vertical_margin"
+	        android:paddingBottom="@dimen/activity_vertical_margin" >
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/enterUserID"
+		        android:textColor="@color/white"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <EditText
+		        android:id="@+id/etUserIDLogin"
+		        android:layout_width="match_parent"
+		        android:layout_height="40sp"
+		        android:inputType="text"
+		        android:textColor="@color/white"
+		        android:background="@drawable/edittextbackground"
+		        android:ems="10" >
+		        <requestFocus />
+		    </EditText>
+		
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/enterPassword"
+		        android:paddingTop="@dimen/activity_vertical_margin"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <EditText
+		        android:id="@+id/etEnterpasswordLogin"
+		        android:layout_width="match_parent"
+		        android:layout_height="40sp"
+		        android:background="@drawable/edittextbackground"
+		        android:ems="10"
+		        android:textColor="@color/white"
+		        android:inputType="textPassword" />
+		    
+		    <Button
+	        android:id="@+id/btnForgotPassword"
+	        android:layout_gravity="right"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40sp"
+	        android:textColor="@color/white"
+	        android:background="@color/background"
+	        android:text="@string/forgotPassword" />	
+		    
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

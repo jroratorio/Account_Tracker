@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="25sp"
+        android:background="@drawable/ribbonbackground"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"        
+        android:text="@string/welcome" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <Button
+            android:id="@+id/btnAddAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:text="@string/addAccount"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonbackground"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:hapticFeedbackEnabled="true"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnAddTrans"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonbackground"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/addTrans"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnRecentTrans"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:textColor="@color/white"
+            android:hapticFeedbackEnabled="true"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/buttonbackground"
+            android:text="@string/recentTrans"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/ribbonbackground"
+        android:text="@string/availableAccounts" />
+
+    <LinearLayout 
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	    <TextView
+	        android:id="@+id/tvNoAccounts"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:textColor="@color/gray"
+	        android:text="@string/noAccounts" />
+	        
+	    <ListView 
+	        android:id="@+id/listAccount"
+	        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	        android:layout_marginRight="@dimen/activity_horizontal_margin"
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent" >	            
+	    </ListView>	    
+    </LinearLayout>
+
+</RelativeLayout>

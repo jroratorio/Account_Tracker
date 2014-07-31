@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".AddTransActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="25sp"
+        android:background="@drawable/ribbonbackground"
+        android:gravity="center"
+        android:text="@string/addTransaction"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        <RelativeLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     >
+			     <TextView
+			         android:id="@+id/textView1"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:layout_alignParentLeft="true"
+			         android:layout_alignParentTop="true"
+			         android:paddingLeft="5sp"
+			         android:paddingTop="5sp"
+			         android:text="@string/account"
+			         android:textColor="@color/white" />
+			        
+			     <Spinner
+			         android:id="@+id/spinnerAccount"
+			         android:layout_width="200sp"
+			         android:layout_height="40sp"
+			         android:layout_alignParentRight="true"
+			         android:layout_alignParentTop="true"
+			         android:textColor="@color/white"
+			         android:background="@drawable/edittextbackground"
+			         android:gravity="right" />        
+			 </RelativeLayout>
+			
+			 <RelativeLayout 
+			     android:layout_height="wrap_content"
+			     android:layout_width="fill_parent">
+			    <TextView
+			        android:id="@+id/textView3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="5sp"
+			        android:paddingTop="5sp"
+			        android:textColor="@color/white"
+			        android:text="@string/transaction" />
+				
+			    <RadioGroup 
+			        android:orientation="horizontal"
+			        android:layout_alignParentRight="true"
+			        android:layout_height="40sp"
+			        android:paddingRight="15sp"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_width="200sp">
+
+			        <RadioButton
+			            android:id="@+id/rbDeposit"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/deposit"
+			            android:textSize="14sp"			            
+			            android:textColor="@color/white" />
+
+			        <RadioButton
+			            android:id="@+id/rbWithdraw"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/withdraw"
+			            android:textSize="14sp"
+			            android:textColor="@color/white" />
+
+			    </RadioGroup>
+			</RelativeLayout>
+						
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+			        android:id="@+id/textView4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="@color/white"
+			        android:paddingLeft="5sp"
+			        android:paddingTop="10sp"
+			        android:text="@string/amount" />
+			
+			    <EditText
+			        android:id="@+id/etAmount"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:textSize="15sp"
+			        android:textColor="@color/white"
+			        android:ems="10"
+			        android:background="@drawable/edittextbackground"
+			        android:hint="@string/amountHint"
+			        android:inputType="numberDecimal" />			
+			</RelativeLayout>
+			
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+			    <TextView
+			        android:id="@+id/textView5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="@color/white"
+				    android:paddingLeft="5sp"
+				    android:paddingTop="10sp"
+			        android:text="@string/mode" />
+				
+			    <Spinner
+			        android:id="@+id/spinnerMode"
+			        android:layout_alignParentRight="true"
+			        android:layout_width="200sp"
+			        android:background="@drawable/edittextbackground"
+			        android:layout_height="40sp" />
+			</RelativeLayout>
+			
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+			        android:id="@+id/textView6"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="@color/white"
+					android:paddingLeft="5sp"
+					android:paddingTop="10sp"
+			        android:text="@string/modeDetails" />
+				
+			    <EditText
+			        android:id="@+id/etInstruNumber"
+			        android:layout_width="200sp"
+			        android:layout_height="40sp"
+			        android:layout_alignParentRight="true"
+			        android:inputType="number"
+			        android:textSize="15sp"
+			        android:textColor="@color/white"
+			        android:hint="@string/instrumentNumberHint"
+			        android:background="@drawable/edittextbackground"
+			        android:ems="10" >			       
+			    </EditText>
+			</RelativeLayout>
+			
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+			    <TextView
+			        android:id="@+id/textView8"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="@color/white"
+					android:paddingLeft="5sp"
+					android:paddingTop="10sp"
+			        android:text="@string/date" />
+
+			   <RelativeLayout 
+			       android:layout_width="200sp"
+			       android:layout_height="40sp"
+			       android:background="@drawable/edittextbackground"
+			       android:layout_alignParentRight="true" >
+				   <TextView
+				        android:id="@+id/tvDate"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:paddingTop="10sp"
+				        android:layout_alignParentRight="true"
+				        android:ems="10"
+				        android:text="@string/defaultDate"
+				        android:textColor="@color/white"
+				        android:textSize="15sp" />
+
+				    <ImageButton
+				        android:id="@+id/imgDatePick"
+				        android:layout_width="20sp"
+				        android:layout_height="20sp"
+				        android:layout_alignBottom="@+id/tvDate"
+				        android:layout_alignParentRight="true"
+				        android:layout_marginRight="65dp"
+				        android:background="@drawable/calendar"
+				        android:contentDescription="@string/date"
+				        android:paddingTop="15sp" />
+
+				    </RelativeLayout>
+			</RelativeLayout>
+			
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" >
+			    <TextView
+			        android:id="@+id/textView7"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="@color/white"
+					android:paddingLeft="5sp"
+					android:paddingTop="10sp"
+			        android:text="@string/remarks" />
+				
+			    <EditText
+			        android:id="@+id/etRemarks"
+			        android:layout_width="200sp"
+			        android:layout_height="80sp"
+			        android:layout_alignParentRight="true"
+			        android:textSize="15sp"
+				    android:textColor="@color/white"        
+			        android:ems="10"
+			        android:hint="@string/remarksHint"
+			        android:background="@drawable/edittextbackground"
+			        android:inputType="textMultiLine" />
+			</RelativeLayout>
+			
+			<Button
+			    android:id="@+id/btnCreateTransaction"
+			    android:layout_width="fill_parent"
+			    android:layout_height="40sp"
+			    android:layout_marginLeft="5sp"
+            	android:layout_marginRight="5sp"
+            	android:textColor="@color/white"
+            	android:hapticFeedbackEnabled="true"
+			    android:background="@drawable/buttonbackground"
+			    android:layout_marginTop="@dimen/activity_vertical_margin"
+			    android:layout_marginBottom="@dimen/activity_vertical_margin"
+			    android:layout_gravity="center"
+			    android:textSize="12sp"
+			    android:text="@string/addTransaction" />        
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

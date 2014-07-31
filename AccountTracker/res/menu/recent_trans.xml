@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/itemShowAll" android:title="@string/showAll"></item>
+    <item android:id="@+id/itemSortAccountNumber" android:title="@string/sortAccountNumber"></item>
+    <item android:id="@+id/itemSortDate" android:title="@string/sortDate"></item>
+    <item android:id="@+id/itemShow25" android:title="@string/twentyFiveTransactions"></item>
+    <item android:id="@+id/itemSearchDate" android:title="@string/searchDate"></item>
+    <item android:id="@+id/itemSearchAmount" android:title="@string/searchAmount"></item>
+
+</menu>
